@@ -226,9 +226,6 @@ section {
     font-family: inherit;
     transition: transform 0.3s, box-shadow 0.3s;
 }
-.light-mode .github-graph-content a {
-    color: #222 !important;
-  }
 .profile-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 32px #fff9;
@@ -618,10 +615,10 @@ html {
     transition: color 0.2s;
 }
 .github-graph-content a:hover {
-    color: var(--link-hover);
-    background: var(--link);
-    border-radius: 3px;
-    padding: 0 4px;
+    color: inherit;
+    background: none;
+    border-radius: 0;
+    padding: 0;
 } 
 .coding-profiles-container {
   display: flex;
@@ -915,14 +912,16 @@ html {
     animation: slideInRight 0.9s cubic-bezier(.4,0,.2,1) forwards;
 }
 @keyframes slideInLeft {
-    0% { opacity: 0; transform: translateX(-120px) translateY(60px) scale(0.95); }
-    60% { opacity: 1; transform: translateX(10px) translateY(-10px) scale(1.02); }
-    100% { opacity: 1; transform: translateX(0) translateY(0) scale(1); }
+  0% { opacity: 0; transform: translateX(-220px) scale(0.95); }
+  70% { opacity: 1; transform: translateX(20px) scale(1.04); }
+  85% { transform: translateX(-8px) scale(1.01); }
+  100% { opacity: 1; transform: translateX(0) scale(1); }
 }
 @keyframes slideInRight {
-    0% { opacity: 0; transform: translateX(120px) translateY(60px) scale(0.95); }
-    60% { opacity: 1; transform: translateX(-10px) translateY(-10px) scale(1.02); }
-    100% { opacity: 1; transform: translateX(0) translateY(0) scale(1); }
+  0% { opacity: 0; transform: translateX(220px) scale(0.95); }
+  70% { opacity: 1; transform: translateX(-20px) scale(1.04); }
+  85% { transform: translateX(8px) scale(1.01); }
+  100% { opacity: 1; transform: translateX(0) scale(1); }
 } 
 /* Toggle button styles */
 .theme-toggle {
@@ -1050,4 +1049,27 @@ html {
 } 
 .light-mode .github-icon {
     filter: invert(1);
+} 
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-80px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(80px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.coding-profile-slide-in-left {
+  opacity: 1 !important;
+  animation: slideInLeft 1.2s cubic-bezier(.4,0,.2,1) forwards;
+}
+.coding-profile-slide-in-right {
+  opacity: 1 !important;
+  animation: slideInRight 1.2s cubic-bezier(.4,0,.2,1) forwards;
+}
+.coding-profile-col {
+  opacity: 0;
+  transition: opacity 0.3s;
+} 
+.light-mode .github-graph-content a {
+  color: #222 !important;
 } 
