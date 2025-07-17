@@ -615,10 +615,10 @@ html {
     transition: color 0.2s;
 }
 .github-graph-content a:hover {
-    color: var(--link-hover);
-    background: var(--link);
-    border-radius: 3px;
-    padding: 0 4px;
+    color: inherit;
+    background: none;
+    border-radius: 0;
+    padding: 0;
 } 
 .coding-profiles-container {
   display: flex;
