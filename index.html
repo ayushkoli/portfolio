@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Koli - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">AK</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">
+                    <span id="theme-toggle-icon" style="display: flex; align-items: center;">
+                        <!-- Icon will be set by JS -->
+                    </span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="nav-progress-bar"><div class="nav-progress-bar-fill"></div></div>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Ayush Koli</h1>
+                <p>Full Stack Developer & CS Undergrad</p>
+                <div class="hero-socials" style="margin-bottom: 2rem; display: flex; justify-content: center; gap: 1.5rem;">
+                    <a href="https://www.linkedin.com/in/ayush-koli-445160299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn" style="color: #0A66C2; font-size: 2.1rem; display: flex; align-items: center;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="32" height="32"><rect width="512" height="512" rx="77" ry="77" fill="#0077B5"/><path d="M120 201h60v211h-60V201zm30-96c-20 0-36 16-36 36s16 36 36 36 36-16 36-36-16-36-36-36zm66 96h57v29h1c8-16 27-32 55-32 59 0 70 39 70 89v125h-60V299c0-24 0-55-34-55-34 0-39 26-39 53v115h-60V201z" fill="#fff"/></svg></a>
+                    <a href="https://x.com/Ayush_1874?t=cv_h4IQfrRo4rcKM_egobw&s=09" target="_blank" aria-label="Twitter" style="color: #1DA1F2; font-size: 2.1rem; display: flex; align-items: center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 4.557a9.83 9.83 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724c-.951.564-2.005.974-3.127 1.195A4.916 4.916 0 0 0 16.616 3c-2.72 0-4.924 2.206-4.924 4.924 0 .386.044.763.127 1.124C7.728 8.807 4.1 6.884 1.671 3.965c-.423.724-.666 1.561-.666 2.475 0 1.708.87 3.216 2.188 4.099a4.904 4.904 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 0 1-2.224.084c.627 1.956 2.444 3.377 4.6 3.417A9.868 9.868 0 0 1 0 21.543a13.94 13.94 0 0 0 7.548 2.212c9.057 0 14.009-7.513 14.009-14.009 0-.213-.005-.425-.014-.636A10.012 10.012 0 0 0 24 4.557z" fill="#1DA1F2"/></svg></a>
+                    <a href="https://github.com/ayushkoli" target="_blank" aria-label="GitHub" style="color: #fff; font-size: 2.1rem; display: flex; align-items: center;"><svg class="github-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" fill="#fff"/></svg></a>
+                    <a href="https://leetcode.com/u/ayushkoli/" target="_blank" aria-label="LeetCode" style="color: #FFA116; font-size: 2.1rem; display: flex; align-items: center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><title>LeetCode</title><path fill="#FFA116" d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg></a>
+                    <a href="mailto:ayushkoli0709@gmail.com" target="_blank" aria-label="Gmail" style="font-size: 2.1rem; display: flex; align-items: center;"><svg width="32" height="32" viewBox="0 0 32 32" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><path d="M16.58,19.1068l-12.69-8.0757A3,3,0,0,1,7.1109,5.97l9.31,5.9243L24.78,6.0428A3,3,0,0,1,28.22,10.9579Z" fill="#ea4435"/><path d="M25.5,5.5h4a0,0,0,0,1,0,0v18a3,3,0,0,1-3,3h0a3,3,0,0,1-3-3V7.5a2,2,0,0,1,2-2Z" fill="#00ac47" transform="translate(53.0001 32.0007) rotate(180)"/><path d="M29.4562,8.0656c-.0088-.06-.0081-.1213-.0206-.1812-.0192-.0918-.0549-.1766-.0823-.2652a2.9312,2.9312,0,0,0-.0958-.2993c-.02-.0475-.0508-.0892-.0735-.1354A2.9838,2.9838,0,0,0,28.9686,6.8c-.04-.0581-.09-.1076-.1342-.1626a3.0282,3.0282,0,0,0-.2455-.2849c-.0665-.0647-.1423-.1188-.2146-.1771a3.02,3.02,0,0,0-.24-.1857c-.0793-.0518-.1661-.0917-.25-.1359-.0884-.0461-.175-.0963-.267-.1331-.0889-.0358-.1837-.0586-.2766-.0859s-.1853-.06-.2807-.0777a3.0543,3.0543,0,0,0-.357-.036c-.0759-.0053-.1511-.0186-.2273-.018a2.9778,2.9778,0,0,0-.4219.0425c-.0563.0084-.113.0077-.1689.0193a33.211,33.211,0,0,0-.5645.178c-.0515.022-.0966.0547-.1465.0795A2.901,2.901,0,0,0,23.5,8.5v5.762l4.72-3.3043a2.8878,2.8878,0,0,0,1.2359-2.8923Z" fill="#ffba00"/><path d="M5.5,5.5h0a3,3,0,0,1,3,3v18a0,0,0,0,1,0,0h-4a2,2,0,0,1-2-2V8.5a3,3,0,0,1,3-3Z" fill="#4285f4"/><path d="M2.5439,8.0656c.0088-.06.0081-.1213.0206-.1812.0192-.0918.0549-.1766.0823-.2652A2.9312,2.9312,0,0,1,2.7426,7.32c.02-.0475.0508-.0892.0736-.1354A2.9719,2.9719,0,0,1,3.0316,6.8c.04-.0581.09-.1076.1342-.1626a3.0272,3.0272,0,0,1,.2454-.2849c.0665-.0647.1423-.1188.2147-.1771a3.0005,3.0005,0,0,1,.24-.1857c.0793-.0518.1661-.0917.25-.1359A2.9747,2.9747,0,0,1,4.3829,5.72c.089-.0358.1838-.0586.2766-.0859s.1853-.06.2807-.0777a3.0565,3.0565,0,0,1,.357-.036c.076-.0053.1511-.0186.2273-.018a2.9763,2.9763,0,0,1,.4219.0425c.0563.0084.113.0077.169.0193a2.9056,2.9056,0,0,1,.286.0888,2.9157,2.9157,0,0,1,.2785.0892c.0514.022.0965.0547.1465.0795a2.9745,2.9745,0,0,1,.3742.21A2.9943,2.9943,0,0,1,8.5,8.5v5.762L3.78,10.9579A2.8891,2.8891,0,0,1,2.5439,8.0656Z" fill="#c52528"/></svg></a>
+                </div>
+                <a href="#contact" class="cta-button">Let's Work Together</a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a Computer Science graduate with a passion for building impactful digital solutions. I enjoy working on creative projects, solving problems, and learning new skills. With experience in web development and a keen interest in technology, I am always looking for opportunities to grow and contribute to meaningful work.</p> <p>I believe in continuous learning and strive to stay updated with the latest industry trends. My goal is to apply my knowledge and creativity to build solutions that make a real difference.</p>
+                    
+                </div>
+                <div class="about-image">
+                    <div class="profile-card">
+                        <div class="profile-img">
+                            <img src="20240119_223314.jpg" alt="Ayush Koli" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" />
+                        </div>
+                        <h3>Ayush Koli</h3>
+                        <p>Full Stack Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-list">
+                <div class="experience-item">
+                    <h3>Web Developer Intern</h3>
+                    <p class="company">Abhinav IT Solutions Pvt Ltd</p>
+                    <p class="exp-description">Completed an in-office, stipend-based internship at a product-based company. Contributed to building and maintaining company products, collaborated with teams, attended client meetings, and optimized development workflows — reducing dev time and improving product delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    
+                    <h3>Frontend Development</h3>
+                    <div class="tech-logos">
+                        <img src="assets/logos/icons8-react-96.png" alt="React" title="React" class="tech-logo" />   
+                        <img src="assets/logos/html.svg" alt="HTML5" title="HTML5" class="tech-logo" />
+                        <img src="assets/logos/css-3.svg" alt="CSS3" title="CSS3" class="tech-logo" />
+                        <img src="assets/logos/js.png" alt="CSS3" title="JavaScript" class="tech-logo" />
+                        <img src="assets/logos/Bootstrap_logo.svg.png" alt="Bootstrap" title="Bootstrap" class="tech-logo" />
+                        <img src="assets/logos/tailwind.png" alt="Tailwind CSS" title="Tailwind CSS" class="tech-logo" />
+                    </div>
+                </div>
+                <div class="skill-card">
+                    
+                    <h3>Backend Development</h3>
+                    <div class="tech-logos">
+                        
+                        <img src="assets/logos/nodejs-custom.svg"  alt="React" title="nodejs" class="tech-logo" />   
+                        <img src="assets/logos/java.svg" alt="HTML5" title="java" class="tech-logo" />
+                        <img src="assets/logos/python.png" alt="CSS3" title="python" class="tech-logo" />
+                        <img src="assets/logos/php-custom.svg" alt="CSS3" title="php" class="tech-logo" />
+                        <img src="assets/logos/spring.png" alt="Bootstrap" title="spring" class="tech-logo" />
+                       
+                    </div>
+                </div>
+                <div class="skill-card">
+                   
+                    <h3>Database & Cloud</h3>
+                    <div class="tech-logos">
+                        <img src="assets/logos/mongodb-custom.svg" alt="MongoDB" title="MongoDB" class="tech-logo" />
+                        <img src="assets/logos/mysql.png" alt="MySQL" title="MySQL" class="tech-logo" />
+                        <img src="assets/logos/google-cloud-1.svg" alt="google cloud" title="google cloud" class="tech-logo" />
+                        <img src="assets/logos/aws.png" alt="AWS" title="AWS" class="tech-logo" />
+                        <img src="assets/logos/docker.svg" alt="Docker" title="Docker" class="tech-logo" />
+                        <img src="assets/logos/kubernetes.png" alt="Kubernetes" title="Kubernetes" class="tech-logo" />
+                        
+                    </div>
+                </div>
+                <div class="skill-card">
+                    
+                    <h3>Dev Tools & Utilities</h3>
+                    <div class="tech-logos">
+                        <img src="assets/logos/git-custom.svg" alt="git" title="Git" class="tech-logo" />
+                        <img src="assets/logos/github-custom.svg" alt="github" title="Github" class="tech-logo" />
+                        <img src="assets/logos/postman-custom.svg" alt="postman" title="Postman" class="tech-logo" />
+                        <img src="assets/logos/Figma-logo.svg.png" alt="figma" title="Figma" class="tech-logo" />
+                        <img src="assets/logos/IntelliJ_IDEA_Icon.svg.png" alt="IntelliJ IDEA" title="IntelliJ IDEA" class="tech-logo" />
+                        <img src="assets/logos/notion.svg" alt="notion" title="notion" class="tech-logo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-list">
+                <div class="project-card" id="gramin-arogya-card">
+                    <div class="project-image">
+                        <img src="Screenshot 2025-07-17 131927.png" alt="Gramin Arogya Screenshot" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:3px;" />
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Gramin Arogya — AI-Powered Rural Healthcare Platform</h3>
+                        <p class="project-description">
+                            Built a full-stack AI-powered healthcare platform for rural areas with features like symptom analysis, real-time health monitoring, and multilingual support.<br>
+                            Integrated telemedicine, digital prescriptions, and government scheme access using Node.js, MongoDB, WebSockets, and AI/ML models.
+                        </p>
+                        <div class="project-links">
+                            
+                            <a href="https://github.com/ayushkoli/Gramin-Arogya" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" id="quicktools-card">
+                    <div class="project-image">
+                        <img src="Screenshot 2025-07-17 152115.png" alt="QuickTools Screenshot" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:3px;" />
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">QuickTools — Multi-Utility Web Tool Suite</h3>
+                        <p class="project-description">Developed a multi-utility web application integrating diverse features into a single, seamless user experience using JavaScript.</p>
+                        <div class="project-links">
+                            
+                            <a href="https://github.com/ayushkoli/Quicktools" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" id="quicktools-card1">
+                    <div class="project-image">
+                        <img src="webrtc-icon.svg" alt="QuickTools Screenshot" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:3px;" />
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Video Calling App</h3>
+                        <p class="project-description">Developed a real-time video calling app using WebRTC for peer-to-peer streaming and Socket.io for signaling, ensuring secure, low-latency communication.</p>
+                        <div class="project-links">
+                            
+                            <a href="https://github.com/ayushkoli/videocall" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div>
+        </div>
+    </section>
+    <section id="coding-profiles">
+        <div class="container" style="display:flex;gap:2rem;flex-wrap:wrap;justify-content:flex-start;align-items:stretch;">
+            <h2 class="section-title" style="width:100%;text-align:left;">Coding Profiles</h2>
+        
+            <div class="leetcode-github-col" style="flex:1 1 350px;min-width:320px;max-width:600px;display:flex;flex-direction:column;justify-content:center;margin-right: 190px;">
+                <div class="github-graph-content">
+                    <img src="https://leetcard.jacoblin.cool/ayushkoli?theme=dark&ext=contest" alt="Ayush Koli's LeetCode Stats" style="width:100%;max-width:800px;display:block;margin:0 auto;background:#fff;border-radius:6px;" />
+                    <div style="margin-top:1rem;font-size:1.1rem;font-weight:600;text-align:left;">LeetCode Stats</div>
+                    <p style="margin-top:0.5rem;font-size:1rem;text-align:left;">@ayushkoli on <a href="https://leetcode.com/u/ayushkoli/" target="_blank" style="color:#fff;text-decoration:underline;">LeetCode</a></p>
+                </div>
+            </div>
+        
+            <div class="leetcode-github-col" style="flex:1 1 350px;min-width:320px;max-width:600px;display:flex;flex-direction:column;justify-content:center;">
+                <div class="github-graph-content">
+                    <img src="https://github-readme-stats.vercel.app/api?username=ayushkoli&show_icons=true&theme=github_dark" alt="Ayush Koli's GitHub Stats" style="max-width:100%;height:auto;" />
+                    <div style="margin-top:1rem;font-size:1.1rem;font-weight:600;text-align:left;">GitHub Stats</div>
+                    <p style="margin-top:0.5rem;font-size:1rem;text-align:left;">@ayushkoli on <a href="https://github.com/ayushkoli" target="_blank" style="color:#fff;text-decoration:underline;">GitHub</a></p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>I'm always excited to work on new projects and collaborate with amazing people. Let's create something incredible together!</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="user_name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="user_email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ayush-koli-445160299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn" style="color: #0A66C2; font-size: 2.1rem; display: flex; align-items: center;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="32" height="32"><rect width="512" height="512" rx="77" ry="77" fill="#0077B5"/><path d="M120 201h60v211h-60V201zm30-96c-20 0-36 16-36 36s16 36 36 36 36-16 36-36-16-36-36-36zm66 96h57v29h1c8-16 27-32 55-32 59 0 70 39 70 89v125h-60V299c0-24 0-55-34-55-34 0-39 26-39 53v115h-60V201z" fill="#fff"/></svg></a>
+                    <a href="https://x.com/Ayush_1874?t=cv_h4IQfrRo4rcKM_egobw&s=09" target="_blank" aria-label="Twitter" style="color: #1DA1F2; font-size: 2.1rem; display: flex; align-items: center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 4.557a9.83 9.83 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724c-.951.564-2.005.974-3.127 1.195A4.916 4.916 0 0 0 16.616 3c-2.72 0-4.924 2.206-4.924 4.924 0 .386.044.763.127 1.124C7.728 8.807 4.1 6.884 1.671 3.965c-.423.724-.666 1.561-.666 2.475 0 1.708.87 3.216 2.188 4.099a4.904 4.904 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 0 1-2.224.084c.627 1.956 2.444 3.377 4.6 3.417A9.868 9.868 0 0 1 0 21.543a13.94 13.94 0 0 0 7.548 2.212c9.057 0 14.009-7.513 14.009-14.009 0-.213-.005-.425-.014-.636A10.012 10.012 0 0 0 24 4.557z" fill="#1DA1F2"/></svg></a>
+                    <a href="https://github.com/ayushkoli" target="_blank" aria-label="GitHub" style="color: #fff; font-size: 2.1rem; display: flex; align-items: center;"><svg class="github-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" fill="#fff"/></svg></a>
+                    <a href="https://leetcode.com/u/ayushkoli/" target="_blank" aria-label="LeetCode" style="color: #FFA116; font-size: 2.1rem; display: flex; align-items: center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><title>LeetCode</title><path fill="#FFA116" d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg></a>
+                    <a href="mailto:ayushkoli0709@gmail.com" target="_blank" aria-label="Gmail" style="font-size: 2.1rem; display: flex; align-items: center;"><svg width="32" height="32" viewBox="0 0 32 32" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><path d="M16.58,19.1068l-12.69-8.0757A3,3,0,0,1,7.1109,5.97l9.31,5.9243L24.78,6.0428A3,3,0,0,1,28.22,10.9579Z" fill="#ea4435"/><path d="M25.5,5.5h4a0,0,0,0,1,0,0v18a3,3,0,0,1-3,3h0a3,3,0,0,1-3-3V7.5a2,2,0,0,1,2-2Z" fill="#00ac47" transform="translate(53.0001 32.0007) rotate(180)"/><path d="M29.4562,8.0656c-.0088-.06-.0081-.1213-.0206-.1812-.0192-.0918-.0549-.1766-.0823-.2652a2.9312,2.9312,0,0,0-.0958-.2993c-.02-.0475-.0508-.0892-.0735-.1354A2.9838,2.9838,0,0,0,28.9686,6.8c-.04-.0581-.09-.1076-.1342-.1626a3.0282,3.0282,0,0,0-.2455-.2849c-.0665-.0647-.1423-.1188-.2146-.1771a3.02,3.02,0,0,0-.24-.1857c-.0793-.0518-.1661-.0917-.25-.1359-.0884-.0461-.175-.0963-.267-.1331-.0889-.0358-.1837-.0586-.2766-.0859s-.1853-.06-.2807-.0777a3.0543,3.0543,0,0,0-.357-.036c-.0759-.0053-.1511-.0186-.2273-.018a2.9778,2.9778,0,0,0-.4219.0425c-.0563.0084-.113.0077-.1689.0193a33.211,33.211,0,0,0-.5645.178c-.0515.022-.0966.0547-.1465.0795A2.901,2.901,0,0,0,23.5,8.5v5.762l4.72-3.3043a2.8878,2.8878,0,0,0,1.2359-2.8923Z" fill="#ffba00"/><path d="M5.5,5.5h0a3,3,0,0,1,3,3v18a0,0,0,0,1,0,0h-4a2,2,0,0,1-2-2V8.5a3,3,0,0,1,3-3Z" fill="#4285f4"/><path d="M2.5439,8.0656c.0088-.06.0081-.1213.0206-.1812.0192-.0918.0549-.1766.0823-.2652A2.9312,2.9312,0,0,1,2.7426,7.32c.02-.0475.0508-.0892.0736-.1354A2.9719,2.9719,0,0,1,3.0316,6.8c.04-.0581.09-.1076.1342-.1626a3.0272,3.0272,0,0,1,.2454-.2849c.0665-.0647.1423-.1188.2147-.1771a3.0005,3.0005,0,0,1,.24-.1857c.0793-.0518.1661-.0917.25-.1359A2.9747,2.9747,0,0,1,4.3829,5.72c.089-.0358.1838-.0586.2766-.0859s.1853-.06.2807-.0777a3.0565,3.0565,0,0,1,.357-.036c.076-.0053.1511-.0186.2273-.018a2.9763,2.9763,0,0,1,.4219.0425c.0563.0084.113.0077.169.0193a2.9056,2.9056,0,0,1,.286.0888,2.9157,2.9157,0,0,1,.2785.0892c.0514.022.0965.0547.1465.0795a2.9745,2.9745,0,0,1,.3742.21A2.9943,2.9943,0,0,1,8.5,8.5v5.762L3.78,10.9579A2.8891,2.8891,0,0,1,2.5439,8.0656Z" fill="#c52528"/></svg></a>
+            </div>
+            <p style="padding-top: 1px;">&copy; 2024 Ayush Koli. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="contactfor.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html> 
