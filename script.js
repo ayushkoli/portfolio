@@ -135,4 +135,20 @@ document.addEventListener('DOMContentLoaded', function() {
         setTheme(isLight ? 'light' : 'dark');
         localStorage.setItem('theme', isLight ? 'light' : 'dark');
     });
+
+    const profileCols = document.querySelectorAll('.coding-profile-col');
+    function handleScroll() {
+      profileCols.forEach((col, idx) => {
+        const rect = col.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          if (idx % 2 === 0) {
+            col.classList.add('coding-profile-slide-in-left');
+          } else {
+            col.classList.add('coding-profile-slide-in-right');
+          }
+        }
+      });
+    }
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Trigger on load
 }); 
