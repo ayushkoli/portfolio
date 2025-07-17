@@ -520,9 +520,13 @@ footer {
     .hero p {
         font-size: 1.2rem;
     }
+    .about-text{
+        text-align: left;
+    }
     .about-content {
+        margin-top: -20px;
         grid-template-columns: 1fr;
-        text-align: center;
+        text-align: left;
     }
     .skills-grid {
         grid-template-columns: 1fr;

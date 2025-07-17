@@ -143,16 +143,18 @@ document.addEventListener('DOMContentLoaded', function() {
         successMessage.className = 'success-message';
         successMessage.innerHTML = `
             <div style="
-                background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-                color: white;
+                background: var(--card-bg, #181818);
+                color: var(--text, #fff);
                 padding: 20px;
                 border-radius: 12px;
                 text-align: center;
                 font-weight: 600;
                 margin-top: 20px;
+                border: 2px solid var(--accent, #6cc644);
+                box-shadow: 0 0 16px var(--shadow, #fff3);
                 animation: slideIn 0.3s ease-out;
             ">
-                <h3 style="margin: 0 0 10px 0;">🎉 Message Sent Successfully!</h3>
+                <h3 style="margin: 0 0 10px 0;">Message Sent Successfully!</h3>
                 <p style="margin: 0;">Thank you for reaching out! I'll get back to you soon.</p>
             </div>
         `;
@@ -204,16 +206,18 @@ document.addEventListener('DOMContentLoaded', function() {
         errorMessage.className = 'error-message-global';
         errorMessage.innerHTML = `
             <div style="
-                background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-                color: white;
+                background: var(--card-bg, #181818);
+                color: var(--text, #fff);
                 padding: 20px;
                 border-radius: 12px;
                 text-align: center;
                 font-weight: 600;
                 margin-top: 20px;
+                border: 2px solid #ff6b6b;
+                box-shadow: 0 0 16px var(--shadow, #fff3);
                 animation: slideIn 0.3s ease-out;
             ">
-                <h3 style="margin: 0 0 10px 0;">❌ Failed to Send Message</h3>
+                <h3 style="margin: 0 0 10px 0;">Failed to Send Message</h3>
                 <p style="margin: 0;">Please try again later or contact me directly.</p>
             </div>
         `;
